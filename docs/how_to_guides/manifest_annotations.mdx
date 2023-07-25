@@ -46,6 +46,12 @@ Running the following command
 oras push --annotation-file annotations.json localhost:5000/club:party cake.txt juice.txt
 ```
 
+creates a manifest file, to output it running the following command:
+
+```
+oras manifest fetch localhost:5000/club:party --pretty
+```
+
 results in
 
 ```json
